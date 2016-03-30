@@ -7,7 +7,8 @@ import sys
 if __name__ == '__main__':
 
     device = RelaySwitcher()
-    device.set_names("usb_voltage", "external_voltage", "RELE3", "RELE4")
+#   following line can be uncommented to change relay names
+#    device.set_names("A", "B", "C", "D")
 
     parser = argparse.ArgumentParser(description='Handles FT245R chip from ElectroTAS board')
     parser.add_argument('-r', '--read-pins', action='store_true', help='')
